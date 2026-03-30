@@ -7,7 +7,7 @@ document.getElementById("dayName").innerText = days[today.getDay()];
 document.getElementById("todayDate").innerText = today.toISOString().split("T")[0];
 
 
-// توليد أرقام 0 → 200
+// توليد أرقام 0 → 400
 function numbers(max){
   let opt = "";
   for(let i=0;i<=max;i++){
@@ -35,7 +35,7 @@ function staffRow(){
       </select>
     </td>
     <td>
-      <select>${numbers(200)}</select>
+      <select>${numbers(20)}</select>
     </td>
     <td><input type="text"></td>
   </tr>`;
@@ -48,7 +48,7 @@ function serviceRow(){
   <tr>
     <td><input type="text" placeholder="اكتب الصنف"></td>
     <td>
-      <select>${numbers(200)}</select>
+      <select>${numbers(400)}</select>
     </td>
     <td><input type="text"></td>
   </tr>`;
